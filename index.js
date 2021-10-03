@@ -9,9 +9,9 @@ const { captureRejectionSymbol } = require('node-telegram-bot-api')
 const { chat } = require('googleapis/build/src/apis/chat')
 
 const fb = firebase_connect.initializeApp({
-    apiKey:'AIzaSyA0wSxSsB938N4mKpV5Nec0tBWbpPFyZAQ',
-    authDomain:'upperrestaurant.firebaseapp.com',
-    databaseURL: 'https://upperrestaurant-default-rtdb.europe-west1.firebasedatabase.app'
+    apiKey:'AIzaSyDOv6h_BGbG4InlyhCBvFqQM_7p6jZltoY',
+    authDomain:'deliverytelegrambot.firebaseapp.com',
+    databaseURL: 'https://deliverytelegrambot-default-rtdb.europe-west1.firebasedatabase.app'
 })
 //====================================================================
 
@@ -8867,8 +8867,7 @@ bot.onText(/\/start/, msg => {
                 if (chat.username !== undefined){
                     business_info[chat.id][4] = chat.username
                 }
-    
-                
+
                 business_info[chat.id][3] = chat.id
     
                 let first_info = {
